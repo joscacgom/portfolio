@@ -1,7 +1,12 @@
+html,
+body {
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Mukta', sans-serif;
     font-size: 16px;
     color: #333;
+    margin:0;
 }
 
 .navbar {
@@ -92,14 +97,12 @@ body{
     justify-content: center;
     height: 100vh;
     width: 100%;
-    background-image: url("your-image-file.jpg");
-    background-size: cover;
-    background-position: center;
     font-family: 'Mukta', sans-serif;
 }
 
 .home--main-content {
     text-align: center;
+    margin-top:5rem;
 }
 
 .home--main--header {
@@ -111,6 +114,7 @@ body{
 .home--main--header--name{
     display: inline-block;
     animation: moveCharacters 3s ease-in-out infinite;
+    color:#0062b9;
 }
 
 @keyframes moveCharacters {
@@ -130,8 +134,10 @@ body{
 
 .home--main-parragraph {
     font-size: 1.2rem;
+    text-align: center;
     color: #555;
     margin-bottom: 4rem;
+    max-width: 60rem;
 }
 
 .home--main-link-button {
@@ -201,6 +207,26 @@ body{
     height: 64px;
 }
 
+.home--main--scroll-button {
+    width: 40px;
+    height: 40px;
+    margin-top:5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    background-image: url("images/arrow.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: bounce 1s infinite alternate;
+}
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
 .about--main {
     background-color: #F4F4F4;
     padding: 2rem;
@@ -212,6 +238,7 @@ body{
 
 .about--main--container {
     text-align: center;
+    margin-top:5rem;
     margin-bottom: 2rem;
 }
 
@@ -300,21 +327,34 @@ body{
 
 .projects--main {
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Mukta', sans-serif;
+    align-items: center;
 }
 
 .projects--main--container {
     text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.projects--main--container--header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 2rem;
 }
 
 .projects--main--container--header--title {
-    font-size: 2rem;
+    font-size: 48px;
     font-weight: bold;
 }
 
 .projects--main--container--header--text {
     font-size: 1.2rem;
     color: #777;
+    max-width: 60rem;
 }
 
 .projects--content {
@@ -329,6 +369,11 @@ body{
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.projects--content--container:hover {
+    transform: scale(1.05);
 }
 
 .projects--content--image--container {
@@ -345,7 +390,7 @@ body{
     margin-bottom: 0.5rem;
 }
 
-.projects--content--info--parragraph {
+.projects--content--info--paragraph {
     font-size: 0.9rem;
     color: #777;
     margin-bottom: 1rem;
@@ -360,26 +405,39 @@ body{
 .projects--content--info--link:hover {
     text-decoration: underline;
 }
-
 .contact--main {
     background-color: #f9f9f9;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Mukta', sans-serif;
+    align-items: center;
 }
 
 .contact--main--container {
     display: flex;
     flex-direction: column;
+    margin-top:5rem;
     align-items: center;
     text-align: center;
 }
 
 .contact--main--container--header {
     margin-bottom: 2rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contact--main--container--header--title {
-    font-size: 1.5rem;
+    font-size: 48px;
     font-weight: bold;
+}
+
+.contact--main--container--header--text {
+    font-size: 1.2rem;
+    color: #777;
+    max-width: 60rem;
 }
 
 .contact--main--form--container {
@@ -387,6 +445,11 @@ body{
     flex-direction: column;
     align-items: center;
     margin-top: 2rem;
+    width: 80%;
+    padding: 2rem;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .contact--main--form--input--container {
@@ -406,16 +469,20 @@ body{
 }
 
 .contact--main--form--submit {
-    background-color: #4caf50;
-    color: white;
-    padding: 0.5rem 1rem;
-    border: none;
+    padding: 0.8rem 2rem;
+    background-color: #2E3440;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 18px;
     border-radius: 4px;
-    cursor: pointer;
+    border:none;
+    cursor:pointer;
+    transition: background-color 0.3s;
 }
 
 .contact--main--form--submit:hover {
-    background-color: #45a049;
+    background-color: #3B4252;
+    animation: glowing 2s ease-in-out infinite;
 }
 
 .footer--main {
@@ -423,6 +490,7 @@ body{
     padding: 2rem;
     text-align: center;
     color:#FFF;
+    font-family: 'Mukta', sans-serif;
 }
 
 .footer--main--container {
@@ -470,4 +538,33 @@ body{
 
 .footer--main--container--bottom--col a:hover {
     text-decoration: underline;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+
+    .home--main-content {
+        margin-top: 2rem;
+    }
+
+    .home--main--header {
+        font-size: 1.8rem;
+        margin-top:8rem;
+    }
+    .home--main-parragraph {
+        font-size: 1rem;
+        max-width: 30rem;
+    }
+
+    .about--main--container{
+        margin-top:0rem;
+    }
+
+    .projects--main--container{
+        margin-top:0rem;
+    }
+
+    .contact--main--container{
+        margin-top:0rem;
+    }
 }
