@@ -16,7 +16,7 @@
   </head>
 
   <body>
-   <header class="navbar">
+<navbar class="navbar">
   <div class="navbar--content">
     <div class="navbar--logo">
       <div class="navbar--logo--img--container">
@@ -26,50 +26,54 @@
           class="navbar--logo--img"
         />
       </div>
-      <span class="navbar--logo--name">JOSCACGOM</span>
+      <span class="navbar--logo--name">joscacgom <span class="navbar--logo--name--sign"><></span></span>
     </div>
+    <input type="checkbox" id="navbar--menu-icon-toggle" class="navbar--menu-icon--toggle">
     <div class="navbar--links--container">
       <ul class="navbar--links">
         <li class="navbar--item">
-          <a href="./index.html" class="navbar--link">HOME</a>
+          <a href="./index.html" class="navbar--link">home</a>
         </li>
         <li class="navbar--item">
-          <a href="./index.html#about" class="navbar--link">ABOUT</a>
+          <a href="#about" class="navbar--link">about</a>
         </li>
         <li class="navbar--item">
-          <a href="./index.html#projects" class="navbar--link">PROJECTS</a>
+          <a href="#projects" class="navbar--link">projects</a>
         </li>
         <li class="navbar--item">
-          <a href="./index.html#contact" class="navbar--link">CONTACT</a>
+          <a href="#contact" class="navbar--link">contact</a>
         </li>
       </ul>
     </div>
+    <label for="navbar--menu-icon-toggle" class="navbar--menu-icon">
+      <img src="./images/menu.png" alt="Menu Icon" class="navbar--menu-icon--img">
+    </label>
   </div>
-</header>
+</navbar>
 
     <section class="home--main">
       <div class="home--main-content">
         <h1 class="home--main--header">Hello, I'm  <span class="home--main--header--name">joscacgom <span></h1>
         <div class="home--main-info">
           <p class="home--main-parragraph">
-            Hi, I'm a software engineer, and I'm passionate about crafting innovative
+            Hi, I'm a software engineer student, and I'm passionate about crafting innovative
             and efficient software solutions. With a strong background in computer science
             and programming languages, I enjoy tackling complex problems and transforming ideas
             into functional applications.
           </p>
         </div>
         <div class="home--main--link">
-          <a href="./#projects" class="home--main-link-button">PROJECTS</a>
+          <a href="#projects" class="home--main-link-button">PROJECTS</a>
         </div>
       </div>
       <div class="home--main--social">
-        <a href="" class="home--main--social-icon">
+        <a href="https://github.com/joscacgom" class="home--main--social-icon">
             <img src="./images/github.png" alt="Github Icon" class="home--main--social-icon--img">
         </a>
-        <a href="" class="home--main--social-icon">
+        <a href="https://www.linkedin.com/in/jos%C3%A9-c%C3%A1ceres-g%C3%B3mez-1a3b9715a/" class="home--main--social-icon">
             <img src="./images/linkedin.png" alt="Linkedin Icon" class="home--main--social-icon--img">
         </a>
-        <a href="" class="home--main--social-icon">
+        <a href="https://twitter.com/" class="home--main--social-icon">
             <img src="./images/twitter.png" alt="Twitter Icon" class="home--main--social-icon--img">
         </a>
       </div>
@@ -82,13 +86,20 @@
     <section id="about" class="about--main">
       <div class="about--main--container">
         <h2 class="about--main--container-header">
-          <span class="about--main--container--header--title">About()</span>
+          <span class="about--main--container--header--title"  >About <span class="about--main--container--header--title--parenthesis">()</span> </span>
           <span class="about--main--container--header--text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-            tempora explicabo quae quod deserunt eius sapiente Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-            tempora explicabo quae quod deserunt eius sapiente Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-            tempora explicabo quae quod deserunt eius sapiente Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-            tempora explicabo quae quod deserunt eius sapiente
+            I'm a student of software engineering, passionate about technology and development.
+            With knowledge in programming languages like Java, JavaScript, Python, Solidity, and TypeScript,
+            I have gained skills in software design, implementation, and testing to meet client needs during
+            my education.
+
+            My experience in academic projects has given me the opportunity to work in teams, improve my communication
+            skills, and enhance my creativity in problem-solving. I am interested in continuing to learn and stay
+            updated on the latest technology trends.
+
+            Currently, I am focusing on learning web3 development and blockchain technologies. I am excited about
+            the potential they hold for revolutionizing various industries and creating decentralized applications.
+            I'm eager to apply my skills and contribute to the exciting and ever-evolving field of software engineering.
           </span>
         </h2>
         <div class="about--main--content--container">
@@ -115,10 +126,9 @@
     <section id="projects" class=projects--main">
       <div class="projects--main--container">
         <h2 class="projects--main--container--header">
-          <span class="projects--main--container--header--title">Projects()</span>
+          <span class="projects--main--container--header--title">Projects <span class="projects--main--container--header--title--parenthesis">()</span></span>
           <span class="projects--main--container--header--text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-            tempora explicabo quae quod deserunt eius sapiente
+            Here are some of my projects. I have worked on them using different technologies and programming languages.
           </span>
         </h2>
 
@@ -127,16 +137,15 @@
             <div class="projects--content--image--container">
               <img
                 src="./images/project1.png"
-                alt="Software Screenshot"
+                alt="GameTrail Screenshot"
                 class="projects--content--image"
               />
             </div>
             <div class="projects--content--info--container">
               <h3 class="projects--content--info--header">GameTrail</h3>
               <p class="projects--content--info--parragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                facilis tempora, explicabo quae quod deserunt eius sapiente
-                praesentium.
+                GameTrail is a platform that help you to explore new ways to play your favorite games with new people
+                and keep a record of your gaming experience.
               </p>
               <a
                 href="https://gametrail.vercel.app/"
@@ -149,17 +158,17 @@
             <div class="projects--content--image--container">
               <img
                 src="./images/project2.png"
-                alt="Software Screenshot"
+                alt="EventVerse Screenshot"
                 class="projects--content--image"
-                loading="lazy"
               />
             </div>
             <div class="projects--content--info--container">
               <h3 class="projects--content--info--header">EventVerse</h3>
               <p class="projects--content--info--parragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                facilis tempora, explicabo quae quod deserunt eius sapiente
-                praesentium.
+                EventVerse is a platform that allows you to create and manage events with NFT Ticketing, allowing
+                you to create, sell, and buy tickets for your events. In addition to this, you can also resell your
+                tickets in the Marketplace.
+
               </p>
               <a
                 href="https://www.eventverse.app/"
@@ -172,16 +181,15 @@
             <div class="projects--content--image--container">
               <img
                 src="./images/project3.png"
-                alt="Software Screenshot"
+                alt="CBD Marketplace Screenshot"
                 class="projects--content--image"
               />
             </div>
             <div class="projects--content--info--container">
               <h3 class="projects--content--info--header">CBD Marketplace</h3>
               <p class="projects--content--info--parragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                facilis tempora, explicabo quae quod deserunt eius sapiente
-                praesentium.
+                CBD Marketplace is a platform that allows you to buy and sell NFT Tokens in the Polygon Blockchain.
+                It is a decentralized application that uses smart contracts to manage the transactions.
               </p>
               <a
                 href="https://cbd-nft-marketplace.vercel.app/"
@@ -197,10 +205,9 @@
     <section id="contact" class="contact--main">
       <div class="contact--main--container">
         <h2 class="contact--main--container--header">
-          <span class="contact--main--container--header--title">Contact()</span>
+          <span class="contact--main--container--header--title">Contact <span class="contact--main--container--header--title--parenthesis">()</span></span>
           <span class="contact--main--container--header--text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-            tempora explicabo quae quod deserunt eius sapiente
+            If you want to contact me, you can send me a message here. I will be happy to answer you.
           </span>
         </h2>
         <div class="contact--main--form--container">
@@ -281,8 +288,8 @@
           <div class="footer--main--container--top--col">
             <h4 class="footer--main--container--top--header">joscacgom</h4>
             <p class="footer--main--container--top-col--text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
-              tempora explicabo quae quod deserunt
+              Hi, I'm a software engineer student, and I'm passionate about crafting innovative and efficient
+              software solutions.
             </p>
           </div>
         </div>
