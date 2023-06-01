@@ -672,8 +672,8 @@ body{
         display: none;
     }
 
-    .home--main--social {
-        margin-top: -3rem;
+    .home--main--social-icon {
+        margin-top: -0.5rem;
     }
 
     .home--main--header {
