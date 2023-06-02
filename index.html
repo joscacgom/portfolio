@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -15,39 +14,38 @@
     <link rel="stylesheet" href="style.css"/>
   </head>
 
-  <body>
-<nav class="navbar">
-  <div class="navbar--content">
-    <div class="navbar--logo">
-      <figure class="navbar--logo--img--container">
-        <img src="./images/jcg.png" alt="José Cáceres Picture" class="navbar--logo--img"
-        />
-      </figure>
-      <span class="navbar--logo--name">joscacgom <span class="navbar--logo--name--sign">< ></span></span>
+<body>
+  <header class="navbar">
+    <div class="navbar--content">
+      <div class="navbar--logo">
+        <div class="navbar--logo--img--container">
+          <img src="./images/jcg.png" alt="José Cáceres Picture" class="navbar--logo--img"/>
+        </div>
+        <span class="navbar--logo--name">joscacgom <span class="navbar--logo--name--sign">< ></span></span>
+      </div>
+      <input type="checkbox" id="navbar--menu-icon-toggle" class="navbar--menu-icon--toggle">
+      <nav class="navbar--links--container">
+        <ul class="navbar--links">
+          <li class="navbar--item">
+            <a href="./index.html" class="navbar--link">home</a>
+          </li>
+          <li class="navbar--item">
+            <a href="#about" class="navbar--link">about</a>
+          </li>
+          <li class="navbar--item">
+            <a href="#projects" class="navbar--link">projects</a>
+          </li>
+          <li class="navbar--item">
+            <a href="#contact" class="navbar--link">contact</a>
+          </li>
+        </ul>
+      </nav>
+      <label for="navbar--menu-icon-toggle" class="navbar--menu-icon">
+        <img src="./images/menu.png" alt="Menu Icon" class="navbar--menu-icon--img">
+      </label>
     </div>
-    <input type="checkbox" id="navbar--menu-icon-toggle" class="navbar--menu-icon--toggle">
-    <div class="navbar--links--container">
-      <ul class="navbar--links">
-        <li class="navbar--item">
-          <a href="./index.html" class="navbar--link">home</a>
-        </li>
-        <li class="navbar--item">
-          <a href="#about" class="navbar--link">about</a>
-        </li>
-        <li class="navbar--item">
-          <a href="#projects" class="navbar--link">projects</a>
-        </li>
-        <li class="navbar--item">
-          <a href="#contact" class="navbar--link">contact</a>
-        </li>
-      </ul>
-    </div>
-    <label for="navbar--menu-icon-toggle" class="navbar--menu-icon">
-      <img src="./images/menu.png" alt="Menu Icon" class="navbar--menu-icon--img">
-    </label>
-  </div>
-</nav>
-
+  </header>
+  <main>
     <section class="home--main">
       <div class="home--main-content">
         <h1 class="home--main--header">Hello, I'm  <span class="home--main--header--name">joscacgom </span></h1>
@@ -75,16 +73,15 @@
         </a>
       </div>
 
-      <a href="#about" class="home--main--scroll-button"></a>
-
-
+      <a href="#about" class="home--main--scroll-button" aria-label="Scroll to About Section"></a>
 
     </section>
     <section id="about" class="about--main">
       <div class="about--main--container">
         <h2 class="about--main--container-header">
-          <span class="about--main--container--header--title"  >About <span class="about--main--container--header--title--parenthesis">()</span> </span>
-          <span class="about--main--container--header--text">
+          <span class="about--main--container--header--title">About <span class="about--main--container--header--title--parenthesis">()</span> </span>
+        </h2>
+        <p class="about--main--container--header--text">
             I'm a student of software engineering, passionate about technology and development.
             With knowledge in programming languages like Java, JavaScript, Python, Solidity, and TypeScript,
             I have gained skills in software design, implementation, and testing to meet client needs during
@@ -97,8 +94,7 @@
             Currently, I am focusing on learning web3 development and blockchain technologies. I am excited about
             the potential they hold for revolutionizing various industries and creating decentralized applications.
             I'm eager to apply my skills and contribute to the exciting and ever-evolving field of software engineering.
-          </span>
-        </h2>
+        </p>
         <div class="about--main--content--container">
           <div class="about--main--container--skills">
             <h3 class="about--main--container--skills--header">My Skills</h3>
@@ -124,10 +120,10 @@
       <div class="projects--main--container">
         <h2 class="projects--main--container--header">
           <span class="projects--main--container--header--title">Projects <span class="projects--main--container--header--title--parenthesis">()</span></span>
-          <span class="projects--main--container--header--text">
-            Here are some of my projects. I have worked on them using different technologies and programming languages.
-          </span>
         </h2>
+        <p class="projects--main--container--header--text">
+            Here are some of my projects. I have worked on them using different technologies and programming languages. Feel free to check them out!
+        </p>
 
         <div class="projects--content">
           <div class="projects--content--container">
@@ -178,10 +174,10 @@
       <div class="contact--main--container">
         <h2 class="contact--main--container--header">
           <span class="contact--main--container--header--title">Contact <span class="contact--main--container--header--title--parenthesis">()</span></span>
-          <span class="contact--main--container--header--text">
-            If you want to contact me, you can send me a message here. I will be happy to answer you.
-          </span>
         </h2>
+        <p class="contact--main--container--header--text">
+            If you want to contact me, you can send me a message here. I will be happy to answer you.
+        </p>
         <div class="contact--main--form--container">
           <form action="#" class="contact--main--form">
             <div class="contact--main--form--input--container">
@@ -203,6 +199,7 @@
         </div>
       </div>
     </section>
+  </main>
     <footer class="footer--main">
       <div class="footer--main--container">
         <div class="footer--main--container--top">
