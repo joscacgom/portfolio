@@ -2,30 +2,27 @@
 <html lang="en">
 
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>JCG - PORTFOLIO</title>
-    <meta name="description" content="JCG Portfolio" />
-    <meta name="keywords" content="JCG, Portfolio, Web Developer" />
+    <meta name="description" content="JCG Portfolio"/>
+    <meta name="keywords" content="JCG, Portfolio, Web Developer"/>
     <meta name="author" content="José Cáceres" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet">
-    <link rel="icon" href="./images/jcg.png" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./images/jcg.png"/>
+    <link rel="stylesheet" href="style.css"/>
   </head>
 
   <body>
-<navbar class="navbar">
+<nav class="navbar">
   <div class="navbar--content">
     <div class="navbar--logo">
-      <div class="navbar--logo--img--container">
-        <img
-          src="./images/jcg.png"
-          alt="José Cáceres Picture"
-          class="navbar--logo--img"
+      <figure class="navbar--logo--img--container">
+        <img src="./images/jcg.png" alt="José Cáceres Picture" class="navbar--logo--img"
         />
-      </div>
+      </figure>
       <span class="navbar--logo--name">joscacgom <span class="navbar--logo--name--sign">< ></span></span>
     </div>
     <input type="checkbox" id="navbar--menu-icon-toggle" class="navbar--menu-icon--toggle">
@@ -49,11 +46,11 @@
       <img src="./images/menu.png" alt="Menu Icon" class="navbar--menu-icon--img">
     </label>
   </div>
-</navbar>
+</nav>
 
     <section class="home--main">
       <div class="home--main-content">
-        <h1 class="home--main--header">Hello, I'm  <span class="home--main--header--name">joscacgom <span></h1>
+        <h1 class="home--main--header">Hello, I'm  <span class="home--main--header--name">joscacgom </span></h1>
         <div class="home--main-info">
           <p class="home--main-parragraph">
             Hi, I'm a software engineer student, and I'm passionate about crafting innovative
@@ -78,7 +75,7 @@
         </a>
       </div>
 
-      <a href="#about" alt="Arrow icon" class="home--main--scroll-button"></a>
+      <a href="#about" class="home--main--scroll-button"></a>
 
 
 
@@ -123,7 +120,7 @@
         </div>
       </div>
     </section>
-    <section id="projects" class=projects--main">
+    <section id="projects" class="projects--main">
       <div class="projects--main--container">
         <h2 class="projects--main--container--header">
           <span class="projects--main--container--header--title">Projects <span class="projects--main--container--header--title--parenthesis">()</span></span>
@@ -133,35 +130,23 @@
         </h2>
 
         <div class="projects--content">
-          <div class="projects--content--container" ">
-            <div class="projects--content--image--container">
-              <img
-                src="./images/project1.png"
-                alt="GameTrail Screenshot"
-                class="projects--content--image"
-              />
-            </div>
+          <div class="projects--content--container">
+            <figure class="projects--content--image--container">
+              <img src="./images/project1.png" alt="GameTrail Screenshot" class="projects--content--image"/>
+            </figure>
             <div class="projects--content--info--container">
               <h3 class="projects--content--info--header">GameTrail</h3>
               <p class="projects--content--info--parragraph">
                 GameTrail is a platform that help you to explore new ways to play your favorite games with new people
                 and keep a record of your gaming experience.
               </p>
-              <a
-                href="https://gametrail.vercel.app/"
-                class="projects projects--content--info--link"
-                >Go to</a
-              >
+              <a href="https://gametrail.vercel.app/" class="projects projects--content--info--link">Go to</a>
             </div>
           </div>
           <div class="projects--content--container">
-            <div class="projects--content--image--container">
-              <img
-                src="./images/project2.png"
-                alt="EventVerse Screenshot"
-                class="projects--content--image"
-              />
-            </div>
+            <figure class="projects--content--image--container">
+              <img src="./images/project2.png" alt="EventVerse Screenshot" class="projects--content--image"/>
+            </figure>
             <div class="projects--content--info--container">
               <h3 class="projects--content--info--header">EventVerse</h3>
               <p class="projects--content--info--parragraph">
@@ -170,33 +155,20 @@
                 tickets in the Marketplace.
 
               </p>
-              <a
-                href="https://www.eventverse.app/"
-                class="projects--content--info--link"
-                >Go to</a
-              >
+              <a href="https://www.eventverse.app/" class="projects--content--info--link">Go to</a>
             </div>
           </div>
           <div class="projects--content--container">
-            <div class="projects--content--image--container">
-              <img
-                src="./images/project3.png"
-                alt="CBD Marketplace Screenshot"
-                class="projects--content--image"
-              />
-            </div>
+            <figure class="projects--content--image--container">
+              <img src="./images/project3.png" alt="CBD Marketplace Screenshot" class="projects--content--image"/>
+            </figure>
             <div class="projects--content--info--container">
               <h3 class="projects--content--info--header">CBD Marketplace</h3>
               <p class="projects--content--info--parragraph">
                 CBD Marketplace is a platform that allows you to buy and sell NFT Tokens in the Polygon Blockchain.
                 It is a decentralized application that uses smart contracts to manage the transactions.
               </p>
-              <a
-                href="https://cbd-nft-marketplace.vercel.app/"
-                class="projects--content--info--link"
-                
-                >Go to</a
-              >
+              <a href="https://cbd-nft-marketplace.vercel.app/" class="projects--content--info--link">Go to</a>
             </div>
           </div>
         </div>
@@ -214,37 +186,15 @@
           <form action="#" class="contact--main--form">
             <div class="contact--main--form--input--container">
               <label class="contact--main--form--label" for="name">Name</label>
-              <input
-                required
-                placeholder="Enter Your Name"
-                type="text"
-                class="contact--main--form--input"
-                name="name"
-                id="name"
-              />
+              <input required placeholder="Enter Your Name" type="text" class="contact--main--form--input" name="name" id="name"/>
             </div>
             <div class="contact--main--form--input--container">
               <label class="contact--main--form--label" for="email">Email</label>
-              <input
-                required
-                placeholder="Enter Your Email"
-                type="text"
-                class="contact--main--form--input"
-                name="email"
-                id="email"
-              />
+              <input required placeholder="Enter Your Email" type="text" class="contact--main--form--input" name="email" id="email"/>
             </div>
             <div class="contact--main--form--input--container">
               <label class="contact--main--form--label" for="message">Message</label>
-              <textarea
-                required
-                cols="30"
-                rows="10"
-                class="contact--main--form--input"
-                placeholder="Enter Your Message"
-                name="message"
-                id="message"
-              ></textarea>
+              <textarea required cols="30" rows="10" class="contact--main--form--input" placeholder="Enter Your Message" name="message" id="message"></textarea>
             </div>
             <button type="submit" class="contact--main--form--submit">
               Submit
@@ -258,35 +208,22 @@
         <div class="footer--main--container--top">
           <div class="footer--main--container--top--col">
             <h2 class="footer--main--container--top--header">
-              <span>Social</span>
+              Social
             </h2>
             <div class="footer--main--container--top--social">
-              <a  href="#">
-                <img
-                  class="footer--main--container--top--social--icon"
-                  src="./images/linkedin.png"
-                  alt="icon"
-                />
+              <a  href="https://www.linkedin.com/in/jos%C3%A9-c%C3%A1ceres-g%C3%B3mez-1a3b9715a/">
+                <img class="footer--main--container--top--social--icon" src="./images/linkedin.png" alt="icon"/>
               </a>
-              <a  href="#">
-                <img
-                  class="footer--main--container--top--social--icon"
-                  src="./images/github.png"
-                  alt="icon"
-                />
+              <a  href="https://github.com/joscacgom">
+                <img class="footer--main--container--top--social--icon" src="./images/github.png" alt="icon"/>
               </a>
-              <a  href="#">
-                <img
-                  class="footer--main--container--top--social--icon"
-                  src="./images/twitter.png"
-                  alt="icon"
-                />
+              <a  href="https://twitter.com/">
+                <img class="footer--main--container--top--social--icon" src="./images/twitter.png" alt="icon"/>
               </a>
-    
             </div>
           </div>
           <div class="footer--main--container--top--col">
-            <h4 class="footer--main--container--top--header">joscacgom</h4>
+            <h2 class="footer--main--container--top--header">joscacgom</h2>
             <p class="footer--main--container--top-col--text">
               Hi, I'm a software engineer student, and I'm passionate about crafting innovative and efficient
               software solutions.
